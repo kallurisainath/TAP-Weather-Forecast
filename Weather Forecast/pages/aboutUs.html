@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TAP Weather Forecast Application</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(18, 18, 62);
+            height: 80px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.4rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            color: antiquewhite;
+        }
+
+
+        .mission,
+        .why-choose {
+            padding: 2rem;
+        }
+
+        .feature {
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            /* Adjust this value to add the desired space */
+        }
+
+        .social-icons img {
+            width: 50px;
+            margin: 0 0.5rem;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">TAP Weather Forecast</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="contactUs.html">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>Our mission at TAP is simple: to empower you with the knowledge and insights you need to plan your day
+            confidently. We understand the impact that weather can have on your daily activities, whether it's planning
+            a weekend getaway, scheduling outdoor events, or simply deciding what to wear. With TAP, you can trust that
+            you'll always be one step ahead of the elements.</p>
+    </section>
+    <section class="why-choose">
+        <h2>Why Choose TAP?</h2>
+        <div class="feature">
+            <h3>Accuracy</h3>
+            <p>Our team of experienced meteorologists and data scientists work tirelessly to ensure that our forecasts
+                are as precise as possible.</p>
+        </div>
+        <div class="feature">
+            <h3>Customization</h3>
+            <p>TAP Weather Forecast Application puts you in control. Customize your experience by setting your location,
+                preferred units, and weather alerts.</p>
+        </div>
+        <!-- Add more features here -->
+    </section>
+    <footer>
+        <p>Connect with us on social media:</p>
+        <div class="social-icons">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/tapacademy.online?igsh=a2huMjJwMG8wOHZo" class="fa fa-instagram"
+                    style="font-size: 24px;"></a>
+                <a href="#" class="fa fa-facebook" style="font-size: 24px;"></a>
+                <a href="#" class="fa fa-twitter" style="font-size: 24px;"></a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

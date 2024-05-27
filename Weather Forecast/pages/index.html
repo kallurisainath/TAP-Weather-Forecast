@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAP Weather Forecast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(18, 18, 62);
+            height: 80px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.4rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            color: antiquewhite;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84;
+        }
+
+        .firstsection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .firstsection>div {
+            color: blue;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: lavender;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .weather-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .weather-page button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            margin-bottom: 3rem;
+        }
+
+        .content {
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .weather-page button:hover {
+            background-color: rgb(153, 153, 226);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            /* Adjust this value to add the desired space */
+        }
+
+
+
+        .social-icons img {
+            width: 50px;
+            margin: 0 0.5rem;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">TAP Weather Forecast</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="contactUs.html">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>
+                    Hi, Welcome to <span class="purple">TAP</span>
+                </div>
+                <span id="element"></span>
+                <span class="purple">Sainath Kalluri</span>
+            </div>
+        </section>
+        <section class="weather-page">
+            <h3 class="content">Unlock the power of accurate weather forecasts. Click on the below button to Get the Weather Insights
+                and never be caught off guard.
+            </h3>
+            <button type="submit" onclick="window.location.href='/Weather Forecast/index.html';">TAP ForeCast
+                Guru</a></button>
+        </section>
+    </main>
+    <footer>
+        <p>Connect with us on social media:</p>
+        <div class="social-icons">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/tapacademy.online?igsh=a2huMjJwMG8wOHZo" class="fa fa-instagram"
+                    style="font-size: 24px;"></a>
+                <a href="#" class="fa fa-facebook" style="font-size: 24px;"></a>
+                <a href="#" class="fa fa-twitter" style="font-size: 24px;"></a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Weather Forecast Application developed by '],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
