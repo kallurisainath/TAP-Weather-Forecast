@@ -201,7 +201,7 @@ function getCityCoordinates() {
     //console.log(cityName);
     cityInput.value = '';
     if (!cityName) return;
-    let GEOCODING_API_URL_ = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}
+    let GEOCODING_API_URL_ = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}
     &limit=1&appid=${api_key}`;
     fetch(GEOCODING_API_URL_).then(res => res.json()).then(data => {
         // console.log(data);
