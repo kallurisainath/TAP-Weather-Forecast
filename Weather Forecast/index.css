@@ -20,13 +20,14 @@ globally accessible throughout the entire document
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: black;
     /*https://www.w3schools.com/csS/css3_box-sizing.asp*/
 }
 
 body {
     min-height: 100vh;
     /*CSS property that sets the minimum height of an element. 100% of the viewport height.*/
-    background-color: var(--bg-color1);
+    background-color: rgb(230, 191, 173);
     color: #fff;
     font-family: sans-serif;
     padding: 0 15px;
@@ -42,14 +43,14 @@ hr {
     /*https://www.w3schools.com/Css/css_positioning.asp*/
     top: 0;
     /*the sticky element starts sticking to the top of its containing block when its top edge reaches the top edge of that block.*/
-    background-color: var(--bg-color1);
+    background-color: rgb(238, 144, 130);
     display: flex;
     /*https://www.w3schools.com/csS/css3_flexbox.asp*/
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
     padding: 15px 0;
-
+    color: white;
     /*SCSS is a syntax of Sass (Syntactically Awesome Stylesheets),
     which is a CSS preprocessor.*/
     & #city_input {
@@ -85,7 +86,7 @@ hr {
 }
 
 .card {
-    background-color: var(--bg-color2);
+    background-color: lightblue;
     padding: 15px;
     border-radius: 15px;
     margin-bottom: 15px;
@@ -104,6 +105,7 @@ hr {
 .weather-data {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    background-color: #e1ac57;
     gap: 12px;
 
     & .weather-left {
