@@ -51,6 +51,7 @@ hr {
     margin-bottom: 10px;
     padding: 15px 0;
     color: white;
+
     /*SCSS is a syntax of Sass (Syntactically Awesome Stylesheets),
     which is a CSS preprocessor.*/
     & #city_input {
@@ -402,6 +403,7 @@ nav ul li a:hover {
     color: rgb(153, 153, 226);
     font-size: 1.4rem;
 }
+
 .left {
     font-size: 1.5rem;
     color: antiquewhite;
